@@ -1,0 +1,17 @@
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.csproj.AssemblyReference.cache
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.Form1.resources
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.csproj.GenerateResource.cache
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.GeneratedMSBuildEditorConfig.editorconfig
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.AssemblyInfoInputs.cache
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.AssemblyInfo.cs
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.csproj.CoreCompileInputs.cache
+D:\desenvolvimento\MD5Sum\MD5Sum\bin\Debug\net6.0-windows\MD5Sum.exe
+D:\desenvolvimento\MD5Sum\MD5Sum\bin\Debug\net6.0-windows\MD5Sum.deps.json
+D:\desenvolvimento\MD5Sum\MD5Sum\bin\Debug\net6.0-windows\MD5Sum.runtimeconfig.json
+D:\desenvolvimento\MD5Sum\MD5Sum\bin\Debug\net6.0-windows\MD5Sum.dll
+D:\desenvolvimento\MD5Sum\MD5Sum\bin\Debug\net6.0-windows\MD5Sum.pdb
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.dll
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\refint\MD5Sum.dll
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.pdb
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\MD5Sum.genruntimeconfig.cache
+D:\desenvolvimento\MD5Sum\MD5Sum\obj\Debug\net6.0-windows\ref\MD5Sum.dll

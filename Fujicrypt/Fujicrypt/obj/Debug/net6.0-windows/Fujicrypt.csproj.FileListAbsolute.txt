@@ -1,0 +1,17 @@
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\bin\Debug\net6.0-windows\Fujicrypt.exe
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\bin\Debug\net6.0-windows\Fujicrypt.deps.json
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\bin\Debug\net6.0-windows\Fujicrypt.runtimeconfig.json
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\bin\Debug\net6.0-windows\Fujicrypt.dll
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\bin\Debug\net6.0-windows\Fujicrypt.pdb
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.csproj.AssemblyReference.cache
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.Form1.resources
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.csproj.GenerateResource.cache
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.GeneratedMSBuildEditorConfig.editorconfig
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.AssemblyInfoInputs.cache
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.AssemblyInfo.cs
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.csproj.CoreCompileInputs.cache
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.dll
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\refint\Fujicrypt.dll
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.pdb
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\Fujicrypt.genruntimeconfig.cache
+D:\desenvolvimento\Criptografia\Fujicrypt\Fujicrypt\obj\Debug\net6.0-windows\ref\Fujicrypt.dll
