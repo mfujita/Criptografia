@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtTplano = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblDecripto2Arquivos = new System.Windows.Forms.Label();
             this.txtLegivel = new System.Windows.Forms.TextBox();
             this.btnDecriptografar = new System.Windows.Forms.Button();
             this.btnSelecionaArquivo = new System.Windows.Forms.Button();
@@ -109,6 +110,7 @@
             // 
             // txtTplano
             // 
+            this.txtTplano.BackColor = System.Drawing.SystemColors.Menu;
             this.txtTplano.Location = new System.Drawing.Point(23, 17);
             this.txtTplano.Multiline = true;
             this.txtTplano.Name = "txtTplano";
@@ -117,6 +119,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lblDecripto2Arquivos);
             this.tabPage2.Controls.Add(this.txtLegivel);
             this.tabPage2.Controls.Add(this.btnDecriptografar);
             this.tabPage2.Controls.Add(this.btnSelecionaArquivo);
@@ -130,6 +133,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Decriptografar";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblDecripto2Arquivos
+            // 
+            this.lblDecripto2Arquivos.AutoSize = true;
+            this.lblDecripto2Arquivos.ForeColor = System.Drawing.Color.Red;
+            this.lblDecripto2Arquivos.Location = new System.Drawing.Point(89, 108);
+            this.lblDecripto2Arquivos.Name = "lblDecripto2Arquivos";
+            this.lblDecripto2Arquivos.Size = new System.Drawing.Size(157, 21);
+            this.lblDecripto2Arquivos.TabIndex = 6;
+            this.lblDecripto2Arquivos.Text = "lblDecripto2Arquivos";
             // 
             // txtLegivel
             // 
@@ -182,6 +195,7 @@
             this.txtSecreto.Name = "txtSecreto";
             this.txtSecreto.Size = new System.Drawing.Size(945, 210);
             this.txtSecreto.TabIndex = 0;
+            this.txtSecreto.Visible = false;
             // 
             // openFileDialog1
             // 
@@ -191,9 +205,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1029, 630);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -223,5 +239,6 @@
         private TextBox txtChaveDecriptografadora;
         private TextBox txtSecreto;
         private OpenFileDialog openFileDialog1;
+        private Label lblDecripto2Arquivos;
     }
 }

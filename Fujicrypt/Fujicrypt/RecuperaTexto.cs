@@ -7,16 +7,9 @@ namespace Fujicrypt
 {
     class RecuperaTexto
     {
-        private string chave;
-
-        public RecuperaTexto(string texto)
-        {
-            chave = texto;
-        }
-
         public string GetText()
         {
-            Bitmap imagem = new Bitmap(chave, true);
+            Bitmap imagem = new Bitmap("chave.jpg");
 
             int i, x, y, pos8;
             string caracter = string.Empty;
@@ -49,7 +42,6 @@ namespace Fujicrypt
             }
 
             mediaDoVetorDecimais = Math.Truncate(somaDoVetorDecimais / 8);
-            //chave = mediaDoVetorDecimais;
             
             return palavra;
         }

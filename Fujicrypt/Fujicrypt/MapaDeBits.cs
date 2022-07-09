@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Text;
-using System.Drawing;
 
 namespace Fujicrypt
 {
@@ -52,7 +48,6 @@ namespace Fujicrypt
             int p8 = mediaDosValoresChave % 2;
             int dividendo = mediaDosValoresChave / 2;
             int p7 = mediaDosValoresChave % 2;
-            //int dividendo = mediaDosValoresChave / 2;
             dividendo /= 2;
             int p6 = dividendo % 2;
             dividendo /= 2;
@@ -76,7 +71,7 @@ namespace Fujicrypt
 
         public bool ConverteTextoEmPixels()
         {
-            int i, x, y, posicao = 0, tamanho;
+            int i, x, y, posicao = 0;
             string cadeia = "";
             bool verifica = false;
 
@@ -87,11 +82,7 @@ namespace Fujicrypt
                 cadeia += Convert.ToString(ansi[i], 2).PadLeft(8, '0');
             }
 
-            tamanho = cadeia.Length; // Completa com 0 até obter 64 bits
-            for (i = tamanho + 1; i <= 64; i++)
-            {
-                cadeia += "0";
-            }
+            cadeia = cadeia.PadRight(64,'0');
 
             for (y = 40; y < 48; y++)
             {
@@ -106,8 +97,8 @@ namespace Fujicrypt
                 }
             }
 
-            imagem.Save("esteganografia.bmp");
-            if (File.Exists("esteganografia.bmp"))
+            imagem.Save("chave.jpg");
+            if (File.Exists("chave.jpg"))
                 verifica = true;
 
             return verifica;
@@ -115,9 +106,8 @@ namespace Fujicrypt
 
         private byte[] Unicode2ANSI(string text)
         {
-            System.Text.Encoding codificador = System.Text.Encoding.GetEncoding("UTF-8");
-            Byte[] ansi = codificador.GetBytes(text);
-            int comprimento = ansi.Length;
+            Encoding codificador = Encoding.Latin1;
+            byte[] ansi = codificador.GetBytes(text);
 
             return ansi;
         }

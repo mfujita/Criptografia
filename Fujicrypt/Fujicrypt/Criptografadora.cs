@@ -14,13 +14,7 @@ namespace Fujicrypt
 {
     class Criptografadora
     {
-        private Byte[] ansi;
-        private string chave = ""; //"10001000";  //"01100001"; //"01001101"; // M (maiúsculo)
-
-        //public Criptografadora()
-        //{
-        //    Byte[] ansi = Unicode2ANSI(texto);
-        //}
+        private byte[] ansi;
 
         public Criptografadora(string texto)
         {
@@ -29,13 +23,13 @@ namespace Fujicrypt
 
         private byte[] Unicode2ANSI(string texto)
         {
-            System.Text.Encoding codificador = System.Text.Encoding.GetEncoding("UTF-8");
-            Byte[] ansi = codificador.GetBytes(texto);
+            System.Text.Encoding codificador = System.Text.Encoding.Latin1;
+            byte[] ansi = codificador.GetBytes(texto);
 
             return ansi;
         }
 
-        public Byte[] FazSubstituicao(/*Byte[] ansi*/)
+        public byte[] FazSubstituicao()
         {
             int i;
             for (i = 0; i < ansi.Length; i++)
@@ -122,6 +116,7 @@ namespace Fujicrypt
 
                 else if (ansi[i].Equals(13)) { ansi[i] = 1; }
                 else if (ansi[i].Equals(10)) { ansi[i] = 2; }
+                else if (ansi[i].Equals(0)) { continue; }
             }
 
             return ansi;
@@ -133,12 +128,7 @@ namespace Fujicrypt
             string binario = "";
             for (i = 0; i < ansi.Length; i++)
             {
-                //if (ansi[i] > 3)
                 binario += Convert.ToString(ansi[i], 2).PadLeft(8, '0');
-                //else
-                //{
-                //    binario += '.';                    
-                //}
             }
 
             return binario;
@@ -197,31 +187,6 @@ namespace Fujicrypt
             return number2char;
         }
 
-        //public char[] Binary2CharDecriptar(string textoPermutado)
-        //{
-        //    int i, pos8 = 0;
-        //    string[] textoCriptografado = new string[textoPermutado.Length / 8];
-        //    int[] textoEmNumeros = new int[textoPermutado.Length / 8];
-        //    char[] number2char = new char[textoPermutado.Length / 8];
-        //    int numero;
-        //    char c;
-
-        //    for (i = 0; i < textoPermutado.Length / 8; i++)
-        //    {
-        //        textoCriptografado[i] = textoPermutado.Substring(pos8, 8);
-        //        pos8 += 8;
-        //        textoEmNumeros[i] = Convert.ToInt32(textoCriptografado[i], 2);
-        //        numero = textoEmNumeros[i];
-        //        //Aritmética modular
-        //        if (numero > 126)
-        //            numero = numero + 126;
-        //        c = Convert.ToChar(numero);
-        //        number2char[i] = c;
-        //    }
-
-        //    return number2char;
-        //}
-
         public string DesfazPermutacaoComChave(string binario, string chave)
         {
             int i, pos8 = 0;
@@ -246,24 +211,13 @@ namespace Fujicrypt
 
         private string LogicaXNOR(char bitsCriptografado, char parteChave)
         {
-            string tabelaVerdadeXNOR = "";
-
-            if (bitsCriptografado.Equals('0') && parteChave.Equals('0'))
-                tabelaVerdadeXNOR = "0";
-            else if (bitsCriptografado.Equals('0') && parteChave.Equals('1'))
-                tabelaVerdadeXNOR = "1";
-            else if (bitsCriptografado.Equals('1') && parteChave.Equals('0'))
-                tabelaVerdadeXNOR = "1";
-            else /*if (bitsCriptografado.Equals('1') && parteChave.Equals('1'))*/
-                tabelaVerdadeXNOR = "0";
-
-            return tabelaVerdadeXNOR;
+            return ((int)(bitsCriptografado) ^ (int)parteChave).ToString();
         }
 
-        public Byte[] DesfazSubstituicao(char[] texto)
+        public byte[] DesfazSubstituicao(char[] texto)
         {
             int i;
-            Byte[] ansi = new Byte[texto.Length];
+            byte[] ansi = new byte[texto.Length];
 
             for (i = 0; i < ansi.Length; i++)
             {
@@ -359,19 +313,14 @@ namespace Fujicrypt
             return ansi;
         }
 
-        public string Decimal2Binary(Byte[] ansi)
+        public string Decimal2Binary(byte[] ansi)
         {
             int i;
 
             string binario = "";
             for (i = 0; i < ansi.Length; i++)
             {
-                //if (ansi[i] > 3)
                 binario += Convert.ToString(ansi[i], 2).PadLeft(8, '0');
-                //else
-                //{
-                //    binario += '.';                    
-                //}
             }
 
             return binario;
